@@ -1,0 +1,31 @@
+@baseURL = http://localhost:4000/api/hp
+
+###
+GET http://localhost:4000/ HTTP/1.1
+
+###
+POST {{baseURL}} HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Realme 7",
+    "year": 2020
+}
+
+### get all hps
+GET {{baseURL}} HTTP/1.1
+
+
+### get hp by id
+GET {{baseURL}}/65db4f90b25d566f72c6af31 HTTP/1.1
+
+### update hp by id
+PUT {{baseURL}}/65db27bc6fcd30b385d36053 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name": "Poco X3 NFC Pro"
+}
+
+### delete hp by id
+DELETE {{baseURL}}/65db4f1c669ed666070427ed HTTP/1.1

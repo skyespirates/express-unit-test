@@ -1,0 +1,29 @@
+{
+  "name": "test-express-2",
+  "version": "1.0.0",
+  "description": "implement basic unit test to express endpoint using supertest",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node --watch server.js",
+    "test": "jest --watchAll --collectCoverage"
+  },
+  "keywords": [
+    "express",
+    "mongoose",
+    "jest",
+    "supertest",
+    "unit test"
+  ],
+  "author": "Skyes Crawford",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mongoose": "^8.2.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "morgan": "^1.10.0",
+    "supertest": "^6.3.4"
+  }
+}
